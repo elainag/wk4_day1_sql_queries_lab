@@ -55,46 +55,46 @@ INSERT INTO movies (title, year, show_time) VALUES ('Black Panther', 2018, '21:0
 
 -- 1.  Return ALL the data in the 'movies' table.
 
--- SELECT * from movies;
+SELECT * from movies;
 
 -- 2.  Return ONLY the name column from the 'people' table
 
---SELECT name from people;
+SELECT name from people;
 
 -- 3.  Oops! Someone spelled Krusty The Clown's name wrong! Change it to reflect the proper spelling (Crusty should be Krusty).
 
---UPDATE people 
---SET name = 'Krusty the Clown'
---WHERE (name) = ('Crusty the Clown');
+UPDATE people 
+SET name = 'Krusty the Clown'
+WHERE (name) = ('Crusty the Clown');
 
---SELECT name from people;
+SELECT name from people;
 
 -- 4.  Return ONLY Homer Simpson's name from the 'people' table.
 
---SELECT name from people
---WHERE name  = 'Homer Simpson';
+SELECT name from people
+WHERE name  = 'Homer Simpson';
 
 -- 5.  The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 
---DELETE from movies
---WHERE title = ('Batman Begins');
---SELECT * from movies
+DELETE from movies
+WHERE title = ('Batman Begins');
+SELECT * from movies
 
 -- 6.  We forgot one of the main characters! Add Bart Simpson to the 'people' table
 
---INSERT INTO people (name) VALUES ('Bart Simpson');
---SELECT * from people;
+INSERT INTO people (name) VALUES ('Bart Simpson');
+SELECT * from people;
 
 -- 7.  Eric Cartman has decided to hijack our movie evening, Remove him from the table of people.
 
---DELETE from people
---WHERE name = ('Eric Cartman');
---SELECT * from people;
+DELETE from people
+WHERE name = ('Eric Cartman');
+SELECT * from people;
 
 -- 8.  The cinema has just heard that they will be holding an exclusive midnight showing of 'Avengers: Infinity War'!! Create a new entry in the 'movies' table to reflect this.
 
---INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2022, '00:00');
---SELECT * from movies;
+INSERT INTO movies (title, year, show_time) VALUES ('Avengers: Infinity War', 2022, '00:00');
+SELECT * from movies;
 
 -- 9.  The cinema would like to make the Iron Man movies a triple billing. Find out the show time of "Iron Man 2" and set the show time of "Iron Man 3" to start two hours later.
 SELECT * from movies
